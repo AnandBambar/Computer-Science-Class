@@ -1,0 +1,112 @@
+body {
+    background-color: cornsilk;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.container {
+    width: auto;
+    padding: 10px;
+    background-color: rgb(219, 202, 240);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.calendar {
+    width: 1400px;
+    height: 700px;
+    padding: 20px;
+    background-color: cadetblue;
+    border-radius: 20px;
+    position: relative;
+}
+
+.prev-month, .next-month {
+    position: absolute;
+    top: 15px;
+    width: 40px;
+    height: 40px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.prev-month {
+    left: 10px;
+}
+
+.next-month {
+    right: 10px;
+}
+
+#month-year {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.Weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    background-color: lightgray;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.Weekdays div {
+    padding: 10px 0;
+    color: black;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    background-color: white;
+    text-align: center;
+}
+
+.days div {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.goto-today {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.goto {
+    display: flex;
+}
+
+.goto input {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.goto-btn, .today-btn {
+    padding: 5px 10px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.today {
+    background-color: lightcoral;
+    color: white;
+    border-radius: 50%;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css">
+    <title>Work Calendar</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calendar">
+            <button class="prev-month">&lt;</button>
+            <div id="month-year"></div>
+            <button class="next-month">&gt;</button>
+
+            <!-- Weekdays -->
+            <div class="Weekdays">
+                <div class="Sun">Sun</div>
+                <div class="Mon">Mon</div>
+                <div class="Tue">Tue</div>
+                <div class="Wed">Wed</div>
+                <div class="Thu">Thu</div>
+                <div class="Fri">Fri</div>
+                <div class="Sat">Sat</div>
+            </div>
+            <div class="days"></div>
+            <div class="goto-today">
+                <div class="goto">
+                    <input type="text" placeholder="mm/yyyy" class="date-input">
+                    <button class="goto-btn">Go</button>
+                </div>
+                <button class="today-btn">Today</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="project.js"></script>
+</body>
+</html>
