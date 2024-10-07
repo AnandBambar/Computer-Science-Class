@@ -12,7 +12,6 @@ const dateInput = document.querySelector('.date-input');
 //new Date(): This creates a new Date object representing the current date and time.
 let currentDate = new Date();
 
-
 //This array holds the names of the months, allowing for easy display in the calendar.
 const months = [
     "January", "February", "March", "April", "May", "June", 
